@@ -3,7 +3,6 @@ package circus;
 import circus.animal.Animal;
 import circus.animal.Bird;
 import circus.animal.Duck;
-import circus.animal.Parrot;
 
 public class Trainer {
     public static void main(String[] args) {
@@ -31,6 +30,8 @@ public class Trainer {
         if (bird instanceof Duck) {
             Duck d = (Duck) bird;
             d.swim();
+        } else {
+            System.out.println("I can only train ducks!");
         }
     }
 }
